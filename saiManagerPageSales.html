@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>FairPay</title>
+        <!--<link rel="stylesheet" href="style.css">-->
+		
+		<style>
+
+		.container { 
+			text-align: center; 
+		}
+		
+		input[type=submit], select {
+			margin: 2px 0;
+		}
+				
+		</style>
+    </head>
+	
+    <body>
+        <!--<h1>FairPay</h1>-->
+		
+		<h2>FairPay</h2>
+		
+		<div class="container">
+			<section id="content">
+					<h3>View Sales</h3>
+					
+					<div class="buttons">										
+						<form action="">
+						  <input type="date" name="salesDate">
+						  <input type="submit">
+						</form>
+					</div>
+			</section>
+		</div>
+		
+		<button onclick="goBack()">Go Back</button>
+
+		<script>
+		function goBack() {
+			window.history.back();
+		}
+		</script>		
+
+    </body>
+	
+</html>
