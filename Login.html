@@ -3,27 +3,19 @@
 
     <head>
         <title>FairPay</title>
-        <!--<link rel="stylesheet" href="style.css">-->
-		
-		<style>
-
-		.container { 
-			text-align: center; 
-		}
-
-		</style>
+        <link rel="stylesheet" href="styleLogin.css">
     </head>
-	
+
     <body>
         <!--<h1>FairPay</h1>-->
-		
+
 		<div class="container">
 			<section id="content">
 				<form action="">
-					<h1>FairPay</h1>
-					
-					<div>
-					  <input list="employees" name="employees">
+					<h1 class="slideDown">FairPay</h1>
+
+					<div id="nameField" class="slideDown">
+					  <input list="employees" name="employees" id="employeesBox">
 					  <datalist id="employees">
 						<option value="Joe">
 						<option value="Dan">
@@ -32,18 +24,18 @@
 						<option value="Chris">
 					  </datalist>
 					</div>
-					
-					<div>
-						<input type="password" placeholder="Password" id="password" />
+
+					<div id="passwordField" class="slideDown">
+						<input type="password" placeholder="Password" id="passwordBox" />
 					</div>
 					<div>
-						<input type="submit" value="Log in" />
+						<input type="submit" value="Log in" id="myButton" class="slideDown"/>
 					</div>
 				</form>
-				
+
 			</section>
 		</div>
 
     </body>
-	
+
 </html>
