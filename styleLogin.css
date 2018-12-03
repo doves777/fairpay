@@ -33,7 +33,6 @@ input:focus{
 #myButton {
 	background-color:#62ACB5;
 	border-radius:28px;
-	border:1px solid #18ab29;
 	display:inline-block;
 	cursor:pointer;
 	color:#ffffff;
