@@ -16,7 +16,7 @@
 				</p> -->
 				<!-- Above commented code replaced with below code -->
 				<div id="nameField" class="slideDown">
-					 <input list="employees" name="user" id="user" required>
+					 <input list="employees" placeholder="Username" name="user" id="user" required>
 					 <datalist id="employees">
 						<option value="Joe">
 						<option value="Dan">
