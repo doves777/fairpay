@@ -4,24 +4,31 @@
 
 </head>
 <style>
+body {
+  color: #FFFFFF;
+  font-family:Arial;
+  background-color: #3B3F45;
+}
+
 #myHeader {
 	width: 400px;			/* needed some width to allow margin: 0 auto to work properly */
     	margin: 0 auto; 		/* auto = left and right margins equal on both sides; 0 = top and bottom margins set to 0 */
 	text-align: center;		/* centers text */
 	padding-top: 50px;		/* pushes header down 50 pixels */
 }
-#manager_buttons_div {			/* outer div that contains all buttons and dropdown menu */
-	
+
+#manager_buttons_div {			/* outer div that contains all buttons, dropdown, back button */
 	width: 800px;
 	text-align: center;
 	margin: 0 auto;
-	
 }
+
 .manager_btns {				/* all buttons on manager access page (excludes dropdown menu) */
 	width: 250px;			/* all buttons to have the same width and height sized boxes */
 	height: 50px;
 	margin-left: 40px;		/* sets margin (indexing to the left) 40 pixels for the three buttons in the second column, away from center */
 	margin-right: 40px;		/* sets margin (indexing to the right) 40 pixels for the three buttons in the first column, away from center */
+	
 }
 #back_btn {					/* back button */
 	margin-top: 50px;		/* gives space to top of back button, pushing it farther down the page */
@@ -34,6 +41,8 @@
     padding: 16px;			/* size of the dropmenu box */
     font-size: 16px;
     border: none;
+	margin-left:3px;
+	
 }
 .dropdown {
     display: inline-block;	/* keeps list of employee names underneath dropdown menu */
@@ -99,7 +108,9 @@
 	<br><br>
 <!------------------------------------------------------------------------------------------->	
 	<!-- should create link to payout page if we decided to include it -->
-	<button class="manager_btns">Edit Employee/Manager Payouts</button>
+	<form method="get" action="">	
+		<button class="manager_btns">Edit Employee/Manager Payouts</button>
+	</form>
 	<br><br>
 <!------------------------------------------------------------------------------------------->	
 	<!-- button from ManagerAccessPage to ManagerPageViewEmployees -->
