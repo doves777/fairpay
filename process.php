@@ -23,5 +23,5 @@ if ($row['username'] == $username && $row['password'] == $password){
 } else {
 	header("location: login.php");
 } 
-  
+  //test
 ?> 
