@@ -30,6 +30,11 @@ body {
 	margin-right: 40px;		/* sets margin (indexing to the right) 40 pixels for the three buttons in the first column, away from center */
 	
 }
+	
+form {
+	display: inline-block;		/* allows buttons in form to be displayed next to one another */	
+}
+	
 #back_btn {					/* back button */
 	margin-top: 50px;		/* gives space to top of back button, pushing it farther down the page */
 	width:120px;
@@ -82,7 +87,7 @@ body {
 	<form method="get" action="ManagerPageItems.html">
 		<button class="manager_btns" type="submit">Add or Remove Items</button>
 	</form>
-	<br><br>
+	
 <!------------------------------------------------------------------------------------------->
 	
 	<!-- button from ManagerAcessPage links to ManagerPageEmployees-->
@@ -105,7 +110,7 @@ body {
 	<form method="get" action="ManagerPageSales.html">
 		<button class="manager_btns" type="submit">View Sales Database</button>
 	</form>
-	<br><br>
+	
 <!------------------------------------------------------------------------------------------->	
 	<!-- should create link to payout page if we decided to include it -->
 	<form method="get" action="">	
@@ -122,7 +127,7 @@ body {
 	<form method="get" action="ManagerPageViewEmployees.html">
 		<button class="manager_btns" type="submit">View Employee Payout for the Week</button>
 	</form>
-	<br><br>
+	
 <!------------------------------------------------------------------------------------------->	
 	<!-- button from ManagerAccessPage to ManagerPageResetPass -->
 	<form method="get" action="reset_password.html">
