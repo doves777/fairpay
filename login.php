@@ -2,7 +2,7 @@
 <html>
 <head>
 	<title>FairPay</title>
-	<link rel="stylesheet" href="styleLogin.css">
+	<link rel="stylesheet" href="styleLogin.css"> 
 </head>
 <body>
 	<div class="container">
@@ -15,9 +15,39 @@
 					<input type="text" id="user" name="user" />
 				</p> -->
 				<!-- Above commented code replaced with below code -->
+				
+				 
+				
+				<?php
+				
+				// calls php file holding credentials to sql database on AWS
+				require_once('database.php');
+				
+				// variable of connection to database on AWS
+				$conn = mysqli_connect($db_hostname, $db_username, $db_password, $database);
+				
+				// sql statement to get usernames of all currently employed members; to populate dropdown menu
+				$sql = "SELECT * FROM Employees";
+				// store sql result into result variable
+				$result = mysqli_query($conn, $sql);
+				
+				//drop down list of employee usernames from MySQL table on AWS
+				echo '<select id="nameField" class="slideDown" name="user">';
+				while ($row = mysqli_fetch_array($result, MYSQLI_ASSOC)) {
+					echo '<option value="'.$row['username'].'">'.$row['username'].'</option>';
+				}
+				echo '</select>';// Close your drop down box
+			
+				?>
+				
+				
+				
+				<!-- Sai's Code 
+				
 				<div id="nameField" class="slideDown">
-					 <input list="employees" placeholder="Username" name="user" id="user" required>
+					 <input list="employees" name="user" id="user" required>
 					 <datalist id="employees">
+						<option value="Manager">
 						<option value="Joe">
 						<option value="Dan">
 						<option value="Bob">
@@ -25,6 +55,8 @@
 						<option value="Chris">
 					</datalist>
 				</div>
+				->
+				
 				
 				
 				<!-- <p>
