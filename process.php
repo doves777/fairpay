@@ -37,6 +37,16 @@ if (mysqli_num_rows($result) > 0) {
 }
 // case where user or pass not correct 
 else {
-	//need to have some sort of javascript to announce wrong user or pass
-	//header("location: login.php");
+	
+	//prompts user entered wrong password and redirects back to login page
+	echo "<script type='text/javascript'>alert('Wrong password. Please try again.');
+	window.location='login.php';
+	</script>";
+
+	
+	
 }
+
+
+
+?> 
