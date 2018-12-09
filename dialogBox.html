@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Checkout</title>
+	<link href="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/start/jquery-ui.min.css" rel="stylesheet">
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+<style>
+#listserve{
+	height:120px;
+	width:120px;
+	font:16px/26px Georgia, Garamond, Serif;
+	overflow: auto;
+	border: 1px solid grey;
+
+}
+</style>
+</head>
+<body>
+	<div id="dialog" title="Dialog">
+		<button class="item" onclick="display('Coconut');">Coconut</button>
+		<button class="item" onclick="display('Back');">Back</button>
+		<button class="item" onclick="display('Front');">Front</button>
+ 	</div>
+	<input type="button" id="button" value="Click to open the dialog">
+	<div id="listserve">
+		<ul id="myList">
+			
+		</ul>
+	</div>
+
+	<script>
+		function append(mars){
+			var node = document.createElement("LI");
+	    var textnode = document.createTextNode(mars);
+	    node.appendChild(textnode);
+	    document.getElementById("myList").appendChild(node);
+		}
+		function display(rawr){
+			append(rawr);
+		}
+		/*
+		 * jQuery UI Dialog: Open Dialog on Click
+		 * https://salman-w.blogspot.com/2013/05/jquery-ui-dialog-examples.html
+		 */
+
+			$("#dialog").dialog({
+				autoOpen: false
+			});
+			$("#button").on("click", function() {
+				$("#dialog").dialog("open");
+			});
+			$(".item").on("click", function() {
+				$("#output").text($(".item").val());
+
+			});
+	</script>
+</body>
+</html>
