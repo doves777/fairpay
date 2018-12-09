@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="../assets/styles.min.css" rel="stylesheet">
+	<title>jQuery UI Dialog: Open Dialog on Click</title>
+	<link href="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/start/jquery-ui.min.css" rel="stylesheet">
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+</head>
+<body>
+	<div id="dialog" title="Dialog">
+		<button class="item" onclick="display('Coconut');">Coconut</button>
+		<button class="item" onclick="display('Back');">Back</button>
+		<button class="item" onclick="display('Front');">Front</button>
+ 	</div>
+	<input type="button" id="button" value="Click to open the dialog">
+	<div id="output">
+		<ul>
+
+		</ul>
+	</div>
+	<h1 class="output"></h1>
+	<script>
+
+		function display(rawr){
+			console.log("hi");
+		$("#output ul").append('<li><span class="tab">Message Center</span></a></li>');
+		}
+		/*
+		 * jQuery UI Dialog: Open Dialog on Click
+		 * https://salman-w.blogspot.com/2013/05/jquery-ui-dialog-examples.html
+		 */
+
+			$("#dialog").dialog({
+				autoOpen: false
+			});
+			$("#button").on("click", function() {
+				$("#dialog").dialog("open");
+			});
+			$(".item").on("click", function() {
+				$("#output").text($(".item").val());
+
+			});
+	</script>
+</body>
+</html>
