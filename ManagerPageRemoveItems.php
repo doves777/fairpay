@@ -33,10 +33,7 @@
 		while ($row = mysqli_fetch_array($result, MYSQLI_ASSOC)) {
 			echo '<option value="'.$row['service_name'].'">'.$row['service_name'].'</option>';
 		}
-		echo '</select>';// Close your drop down box
-			
-		$sql = "UPDATE Services SET available = 'Y' WHERE service_name = 'test2'";
-		$result = mysqli_query($conn, $sql);			
+		echo '</select>';// Close your drop down box			
 	?>
 	
 	<br>
@@ -47,16 +44,9 @@
 
 </form>
 	
-	<button onclick="goBack()">Back</button>
-
-<script>
-
-	//function to go back to previous page
-	function goBack() {
-	window.history.back();
-	}
-
-</script>
+	<form method="get" action="ManagerAccessPage.html"> 
+		<input type="submit" value="Back" />
+	</form> 
 
 </body>
 </html>
