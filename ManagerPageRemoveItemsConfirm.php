@@ -30,13 +30,13 @@ Service has been removed from list of available services offered.
 		$result = mysqli_query($conn, $sql);			
 	?>
 
-<form method="get" action="ManagerPageRemoveItems.php"> 
+<form method="post" action="ManagerPageRemoveItems.php"> 
 	<input type="submit" value="Remove Another Service" />
 </form> 
 
 <br>
 
-<form method="get" action="ManagerAccessPage.html"> 
+<form method="post" action="ManagerAccessPage.html"> 
 	<input type="submit" value="Back to Manager Access Page" />
 </form> 
 
