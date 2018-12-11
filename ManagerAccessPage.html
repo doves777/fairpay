@@ -28,13 +28,11 @@ body {
 	height: 50px;
 	margin-left: 40px;		/* sets margin (indexing to the left) 40 pixels for the three buttons in the second column, away from center */
 	margin-right: 40px;		/* sets margin (indexing to the right) 40 pixels for the three buttons in the first column, away from center */
-	
 }
-	
+
 form {
-	display: inline-block;		/* allows buttons in form to be displayed next to one another */	
+	display: inline-block;	/* allows buttons in form to be displayed next to one another */
 }
-	
 #back_btn {					/* back button */
 	margin-top: 50px;		/* gives space to top of back button, pushing it farther down the page */
 	width:120px;
@@ -78,64 +76,36 @@ form {
 <br><br>
 
 <div id="manager_buttons_div">
-	<!-- button from ManagerAccessPage links to ManagerPageItems -->
-
-	<!-- <a href="ManagerPageItems.html"> 								****Kelvin's Code Kept***
-		<button class="manager_btns">Add or Remove Items</button>
-	</a -->
 	
-	<form method="get" action="ManagerPageItems.html">
+	<form method="post" action="ManagerPageItems.html">
 		<button class="manager_btns" type="submit">Add or Remove Items</button>
 	</form>
 	
-<!------------------------------------------------------------------------------------------->
-	
-	<!-- button from ManagerAcessPage links to ManagerPageEmployees-->
-	
-	<!-- <a href="ManagerPageEmployees.html">							****Kelvin's Code Kept***
-		<button class="manager_btns">Add or Remove Employees</button>
-	</a> -->
-	
-	<form method="get" action="ManagerPageEmployees.html">
+	<form method="post" action="ManagerPageEmployees.html">
 		<button class="manager_btns" type="submit">Add or Remove Employees</button>
 	</form>
 	<br><br>
-<!------------------------------------------------------------------------------------------->	
-	<!-- button from ManagerAccessPage links to ManagerPageSales -->
 	
-	<!-- <a href="ManagerPageSales.html">								****Kelvin's Code Kept***
-	<button class="manager_btns">View Sales Database</button>
-	</a> -->
-	
-	<form method="get" action="ManagerPageSales.html">
+	<form method="post" action="ManagerPageSales.html">
 		<button class="manager_btns" type="submit">View Sales Database</button>
 	</form>
 	
-<!------------------------------------------------------------------------------------------->	
 	<!-- should create link to payout page if we decided to include it -->
-	<form method="get" action="">	
+	<form method="post" action="">	
 		<button class="manager_btns">Edit Employee/Manager Payouts</button>
 	</form>
 	<br><br>
-<!------------------------------------------------------------------------------------------->	
-	<!-- button from ManagerAccessPage to ManagerPageViewEmployees -->
-	
-	<!-- <a href="ManagerPageViewEmployees.html">						****Kelvin's Code Kept***
-		<button class="manager_btns">View Employee Payout for the Week</button>
-	</a> -->
-	
-	<form method="get" action="ManagerPageViewEmployees.html">
+
+	<form method="post" action="ManagerPageViewEmployees.html">
 		<button class="manager_btns" type="submit">View Employee Payout for the Week</button>
 	</form>
 	
-<!------------------------------------------------------------------------------------------->	
 	<!-- button from ManagerAccessPage to ManagerPageResetPass -->
-	<form method="get" action="reset_password.html">
+	<form method="post" action="reset_password.html">
 		<button class="manager_btns" type="submit">Reset Password</button>
 	</form>
 	<br><br>
 	
-<!------------------------------------------------------------------------------------------->
 	<!-- dropmenu of all employees to check out as -->
 	<div class="dropdown">
 	  <button class="dropbtn">-- Checkout as Employee --</button>
@@ -147,7 +117,7 @@ form {
 	</div>
 	<br><br>
 	<!-- button to get out of ManagerAccessPage and back to login page -->
-	<form method="get" action="Login.php">
+	<form method="post" action="login.php">
 		<button id="back_btn">Back</button>
 	</form>
 </div>
