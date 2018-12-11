@@ -61,6 +61,10 @@
 		input {									/* padding for category buttons */
 			padding: 3px;
 		}
+		
+		form {
+			display: inline-block;	/* allows buttons in form to be displayed next to one another */
+		}
 
 	</style>
 	
@@ -100,9 +104,9 @@
 			<button id="back" onclick="goBack()">Back</button>
 			
 			<!-- This button should take you to the final checkout screen with payment options -->
-			<a href="">
-				<button>Checkout</button>
-			</a>
+			<form method="post" action="newCheckout.html">
+				<input type="submit" value="Checkout" />
+			</form>
 			
 		</div>
 	</div>
