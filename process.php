@@ -2,11 +2,6 @@
 $username = $_POST['user'];
 $password = $_POST['pass'];
 
-//$username = stripcslashes($username);
-//$password = stripcslashes($password);
-//$username = mysql_real_escape_string($username);
-//$password = mysql_real_escape_string($password);
-
 require_once('database.php');
 
 // variable to database on AWS
@@ -42,11 +37,6 @@ else {
 	echo "<script type='text/javascript'>alert('Wrong password. Please try again.');
 	window.location='login.php';
 	</script>";
-
-	
-	
 }
-
-
 
 ?> 
