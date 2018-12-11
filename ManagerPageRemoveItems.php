@@ -44,7 +44,7 @@
 
 </form>
 	
-	<form method="get" action="ManagerAccessPage.html"> 
+	<form method="post" action="ManagerAccessPage.html"> 
 		<input type="submit" value="Back" />
 	</form> 
 
