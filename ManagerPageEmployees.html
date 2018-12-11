@@ -3,7 +3,6 @@
 
     <head>
         <title>FairPay</title>
-        <!--<link rel="stylesheet" href="style.css">-->
 		
 		<style>
 
@@ -26,7 +25,6 @@
     </head>
 	
     <body>
-        <!--<h1>FairPay</h1>-->
 		
 		<h2>FairPay</h2>
 		
@@ -35,10 +33,14 @@
 					<h3>Add or Remove Employees</h3>
 					
 					<div class="buttons">
-						<form action="">
+						<form method="post" action="ManagerPageAddEmpl.php">
 							<input type="submit" value="Add Employee" />
 						</form>
 										
+						<form method="post" action="NotImplemented.php">
+							<input type="submit" value="Remove Employee" />
+						</form>
+						
 						<form action="">
 							<input type="submit" value="Edit Existing Employee" />
 						</form>
@@ -46,13 +48,9 @@
 			</section>
 		</div>
 		
-		<button onclick="goBack()">Back</button>
-
-		<script>
-		function goBack() {
-			window.history.back();
-		}
-		</script>		
+		<form method="post" action="ManagerAccessPage.html"> 
+			<input type="submit" value="Back" />
+		</form>		
 
     </body>
 	
