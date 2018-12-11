@@ -47,11 +47,9 @@ function validateForm() {
 		alert("Service price is not of correct format. Must be any number followed by two decimal places e.g. 40.00.");
 		return false;
 	}
-	
 }
 
 </script>
-
 </head>
 <body>
 
@@ -86,13 +84,10 @@ function validateForm() {
 
 </form>
 
-<button onclick="goBack()">Back</button>
 
-<script>
-	function goBack() {
-	window.history.back();
-	}
-</script>
+<form method="post" action="ManagerPageItems.html"> 
+	<input type="submit" value="Back" />
+</form>
 
 <?php
 
@@ -100,36 +95,39 @@ $type = $_POST['type_of_service'];
 $name = $_POST['service_name'];
 $price = $_POST['service_price'];
 
-require_once('database.php');
+//executes php only when information has been inputted; "crude" way of stopping the execution of php when jumping to this page
+if (!empty($type)) {
 
-//variable to database on AWS
-$conn = mysqli_connect($db_hostname, $db_username, $db_password, $database);
+	require_once('database.php');
 
-//tests if connection to database is working; error message should not pop up if working properly
-if ($conn->connect_errno) {
-  die('ERROR NO DATABSE');
-}
+	//variable to database on AWS
+	$conn = mysqli_connect($db_hostname, $db_username, $db_password, $database);
 
-//assign variable to max id count query from above
-$result = mysqli_query($conn, "SELECT MAX(service_id) FROM Services");
-//row is an array of all values from sql query
-$row = mysqli_fetch_row($result);
+	//tests if connection to database is working; error message should not pop up if working properly
+	if ($conn->connect_errno) {
+	  die('ERROR NO DATABSE');
+	}
 
-//sql query to get all rows where user and pass match what was entered from POST data
-$sql = "INSERT INTO Services (service_id, type_of_service_id, service_name, service_price, available) VALUES ('$row[0]' + 1, '$type', '$name', '$price', 'Y');";
+	//assign variable to max id count query from above
+	$result = mysqli_query($conn, "SELECT MAX(service_id) FROM Services");
+	//row is an array of all values from sql query
+	$row = mysqli_fetch_row($result);
 
-//this command makes the sql query above execute
-$result = mysqli_query($conn, $sql);
+	//sql query to get all rows where user and pass match what was entered from POST data
+	$sql = "INSERT INTO Services (service_id, type_of_service_id, service_name, service_price, available) VALUES ('$row[0]' + 1, '$type', '$name', '$price', 'Y');";
 
-//prints out message saying item added to database when all user values are valid
-if (mysqli_affected_rows($conn) > 0) {
-	echo '<script type="text/javascript">';
-	echo 'alert("Item has been added to services table in database!")';
-	echo '</script>';
+	//this command makes the sql query above execute
+	$result = mysqli_query($conn, $sql);
+
+	//prints out message saying item added to database when all user values are valid
+	if (mysqli_affected_rows($conn) > 0) {
+		echo '<script type="text/javascript">';
+		echo 'alert("Item has been added to services table in database!")';
+		echo '</script>';
+	}
 }
 
 ?>
-
 
 </body>
 </html>
