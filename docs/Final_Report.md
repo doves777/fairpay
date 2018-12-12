@@ -4,11 +4,11 @@ Fairpay
 
 (2) team members
 
-Andrew Hung 
-Kelvin Huynh 
-Sai Tipirneni 
-Suneel Rahman 
-Robert Sacker 
+Andrew Hung <br>
+Kelvin Huynh <br>
+Sai Tipirneni <br>
+Suneel Rahman <br>
+Robert Sacker <br>
 
 (3) link the project code in github
 
