@@ -26,21 +26,21 @@ Database Structure:
 
 5 tables, listed with their respective column names and purpose:
 
-Employees: 
+Employees: <br />
 	- employee_id: unique id number of each employee_id <br />
 	- full_name: name of employee <br />
 	- currently_employed: a flag of 'Y' or 'N' for each employee; to be utilized when adding or removing an employee <br />
 	- username: the login value of the employee in the front page of site <br />
 	- password: password for each employee/username when logging in the front page <br />
 	
-Services:
+Services: <br />
 	- service_id: unique id number of each service available at the business <br />
 	- type_of_service_id: a number value of 1 (for Nail service) or 2 (for Waxing service) <br />
 	- service_name: name of each service <br />
 	- service_price: price of each service <br />
 	- available: a flag of 'Y' or 'N' for each service: utilized when adding/removing items (dynamic dropdown menu of items) <br />
 	
-Transaction_Details:
+Transaction_Details: <br />
 	- transaction_details_id: unique id for every transaction for every employee that happens at the business <br />
 	- transaction_id: id for every transaction; same unique value as transaction_details_id <br />
 	- service_id: the id of the particular service that was ordered by the customer <br />
@@ -49,7 +49,7 @@ Transaction_Details:
 	- service_total: total amount paid by customer for that particular transaction <br />
 	- transaction_date: time and date of when transaction took place <br />
 	
-Transactions:
+Transactions: <br />
 	- transaction_id: unique id of each transaction that took place at the business <br />
 	- employee_id: id of employee that handled that particular transaction <br />
 	
