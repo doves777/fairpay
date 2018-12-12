@@ -5,7 +5,6 @@ Fair Pay is an easy to use, light weight web-based application intended for use 
 There are two types of users on the platform, Employees and Managers.
 
 ## Employees
-___________________________________________
 
 For Employees, you are required to login into the application in order to recieve credit for transactions.
 
@@ -14,7 +13,6 @@ After loging in, you will see a screen with different categories of products as 
 After you are done selecting all the items you want to check out, click checkout and the options Cash and Credit/Debit as well as the total will appear. Chose one of these checkout options to complete the transaction.
 
 ## Managers
-___________________________________________
 
 Managers are required to login into the application in order to verify your identity.
 
