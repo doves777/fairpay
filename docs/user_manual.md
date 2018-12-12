@@ -2,18 +2,21 @@ Fair Pay is an easy to use, light weight web-based application intended for use 
 
 There are two types of users on the platform, Employees and Managers.
 
-Users
+Employees
 ___________________________________________
 
+For Employees, you are required to login into the application in order to recieve credit for transactions.
+
+After loging in, you will see a screen with different categories of products as well as a list of items.  To add items, you can either click on the category which will produce a pop-up of all the items inside of that category, or you can type into the search bar and search the item that you want.
+
+After you are done selecting all the items you want to check out, click checkout and the options Cash and Credit/Debit as well as the total will appear. Chose one of these checkout options to complete the transaction.
 
 Managers
 ___________________________________________
 
+Managers are required to login into the application in order to verify your identity.
+
+After loging in, Managers will be given the option to add or remove items from the store catalog, view store sales, view employee payouts, add and remove employees, edit employee's payout, as well as reset users password.  In addition to these options, managers are able to check out as a specific employee.  
 
 
 
-This application's users would be store employees.
-
-Among the store employees includes the manager. The manager should use this application to edit/remove any employees and/or services. The manager also can see what each employee is being payed, the pay-out distribution, and any previous sales made. The manager can find all these options in the Manager Access Page.
-
-The store employees can use this applications as a standard point of sales system to check out customers.
