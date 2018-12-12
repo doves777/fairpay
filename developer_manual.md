@@ -27,32 +27,32 @@ Database Structure:
 5 tables, listed with their respective column names and purpose:
 
 Employees: 
-	- employee_id: unique id number of each employee_id
-	- full_name: name of employee
-	- currently_employed: a flag of 'Y' or 'N' for each employee; to be utilized when adding or removing an employee
-	- username: the login value of the employee in the front page of site
-	- password: password for each employee/username when logging in the front page
+	- employee_id: unique id number of each employee_id <br />
+	- full_name: name of employee <br />
+	- currently_employed: a flag of 'Y' or 'N' for each employee; to be utilized when adding or removing an employee <br />
+	- username: the login value of the employee in the front page of site <br />
+	- password: password for each employee/username when logging in the front page <br />
 	
 Services:
-	- service_id: unique id number of each service available at the business
-	- type_of_service_id: a number value of 1 (for Nail service) or 2 (for Waxing service)
-	- service_name: name of each service
-	- service_price: price of each service
-	- available: a flag of 'Y' or 'N' for each service: utilized when adding/removing items (dynamic dropdown menu of items)
+	- service_id: unique id number of each service available at the business <br />
+	- type_of_service_id: a number value of 1 (for Nail service) or 2 (for Waxing service) <br />
+	- service_name: name of each service <br />
+	- service_price: price of each service <br />
+	- available: a flag of 'Y' or 'N' for each service: utilized when adding/removing items (dynamic dropdown menu of items) <br />
 	
 Transaction_Details:
-	- transaction_details_id: unique id for every transaction for every employee that happens at the business
-	- transaction_id: id for every transaction; same unique value as transaction_details_id
-	- service_id: the id of the particular service that was ordered by the customer
-	- employee_id: id of employee that handle that particular transaction
-	- service_quantity: the number amount of the service ordered: typically 1, just in case they pay for another person
-	- service_total: total amount paid by customer for that particular transaction
-	- transaction_date: time and date of when transaction took place
+	- transaction_details_id: unique id for every transaction for every employee that happens at the business <br />
+	- transaction_id: id for every transaction; same unique value as transaction_details_id <br />
+	- service_id: the id of the particular service that was ordered by the customer <br />
+	- employee_id: id of employee that handle that particular transaction <br />
+	- service_quantity: the number amount of the service ordered: typically 1, just in case they pay for another person <br />
+	- service_total: total amount paid by customer for that particular transaction <br />
+	- transaction_date: time and date of when transaction took place <br />
 	
 Transactions:
-	- transaction_id: unique id of each transaction that took place at the business
-	- employee_id: id of employee that handled that particular transaction
+	- transaction_id: unique id of each transaction that took place at the business <br />
+	- employee_id: id of employee that handled that particular transaction <br />
 	
 Type of Services:
-	- type_of_service_id: unique id number of different types of services the business can offer
-	- type_of_service_name: name of the type of service (in this case, would be 'Nail' and 'Waxing'
+	- type_of_service_id: unique id number of different types of services the business can offer <br />
+	- type_of_service_name: name of the type of service (in this case, would be 'Nail' and 'Waxing' <br />
