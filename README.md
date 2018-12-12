@@ -14,4 +14,4 @@ Group Members and Contact Info:
     
     Sai - stipirneni@yahoo.com
 
-Description: This is essentially a point of sales system aimed at the solving the businesss needs of small business owners or businesses that employ commission based wages.
+Description: This is a web based point of sales system aimed at the solving the businesss needs of small business owners or businesses that employ commission based wages.
