@@ -53,6 +53,6 @@ Transactions: <br />
 	- transaction_id: unique id of each transaction that took place at the business <br />
 	- employee_id: id of employee that handled that particular transaction <br />
 	
-Type of Services:
+Type of Services: <br />
 	- type_of_service_id: unique id number of different types of services the business can offer <br />
 	- type_of_service_name: name of the type of service (in this case, would be 'Nail' and 'Waxing' <br />
