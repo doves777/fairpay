@@ -1,6 +1,6 @@
 
  Necessary software/libraries: 
-
+==================================
 
 Amazon EC2 Instance: hosts the server.
 Amazon RDS Database: database of the site, in the cloud.
@@ -10,21 +10,18 @@ WinSCP: transfer of local/github files to the EC2 instance, where the server lie
 Ubuntu (terminal): used to move files from files that were dragged into the root directory of the instance,
 				   and dragged directly into the path /var/www/html/ (where files become live on the server).
 
-===================
-| File structure: |
+File structure: 
 ===================
 
 All files are within the /var/www/html/ file directory of the Amazon EC2 instance server. Files should be placed
 into folders titled 'Front_Page', 'Manager_Page', 'Checkout_Page', and 'CSS'.
 
-=======================
-| System environment: |
+System environment: 
 =======================
 
 All activity related to moving files to server were conducted on Windows 10. 
 
-=======================
-| Database Structure: |
+Database Structure: 
 =======================
 
 5 tables, listed with their respective column names and purpose:
