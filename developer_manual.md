@@ -38,7 +38,7 @@ Services: <br />
 	- type_of_service_id: a number value of 1 (for Nail service) or 2 (for Waxing service) <br />
 	- service_name: name of each service <br />
 	- service_price: price of each service <br />
-	- available: a flag of 'Y' or 'N' for each service: utilized when adding/removing items (dynamic dropdown menu of items) <br />
+		- available: a flag of 'Y' or 'N' for each service: utilized when adding/removing items (dynamic dropdown menu of items) <br />
 	
 Transaction_Details: <br />
 	- transaction_details_id: unique id for every transaction for every employee that happens at the business <br />
