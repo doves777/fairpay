@@ -2,18 +2,18 @@
  Necessary software/libraries: 
 ==================================
 
-Amazon EC2 Instance: hosts the server.
-Amazon RDS Database: database of the site, in the cloud.
+Amazon EC2 Instance: hosts the server. <br />
+Amazon RDS Database: database of the site, in the cloud. <br />
 
-MySQL Workbench: connection to the RDS database and allow editing/handling of the db from local computer.
-WinSCP: transfer of local/github files to the EC2 instance, where the server lies.
-Ubuntu (terminal): used to move files from files that were dragged into the root directory of the instance,
+MySQL Workbench: connection to the RDS database and allow editing/handling of the db from local computer. <br />
+WinSCP: transfer of local/github files to the EC2 instance, where the server lies. <br />
+Ubuntu (terminal): used to move files from files that were dragged into the root directory of the instance, <br />
 				   and dragged directly into the path /var/www/html/ (where files become live on the server).
 
 File structure: 
 ===================
 
-All files are within the /var/www/html/ file directory of the Amazon EC2 instance server. Files should be placed
+All files are within the /var/www/html/ file directory of the Amazon EC2 instance server. Files should be placed <br />
 into folders titled 'Front_Page', 'Manager_Page', 'Checkout_Page', and 'CSS'.
 
 System environment: 
