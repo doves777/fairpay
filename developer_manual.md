@@ -1,7 +1,6 @@
 
-=================================
-| Necessary software/libraries: |
-=================================
+ Necessary software/libraries: 
+
 
 Amazon EC2 Instance: hosts the server.
 Amazon RDS Database: database of the site, in the cloud.
