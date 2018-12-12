@@ -1,10 +1,16 @@
+ (1) title 
+ 
 Fairpay
+
+(2) team members
 
 Andrew Hung <br>
 Kelvin Huynh <br>
 Sai Tipirneni <br>
 Suneel Rahman <br>
 Robert Sacker <br>
+
+(3) link the project code in github
 
 https://github.com/doves777/fairpay
 
