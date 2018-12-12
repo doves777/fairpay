@@ -1,10 +1,10 @@
 Fairpay
 
-Andrew Hung
-Kelvin Huynh
-Sai Tipirneni
-Suneel Rahman
-Robert Sacker
+Andrew Hung <br>
+Kelvin Huynh <br>
+Sai Tipirneni <br>
+Suneel Rahman <br>
+Robert Sacker <br>
 
 https://github.com/doves777/fairpay
 
