@@ -20,9 +20,9 @@ After loging in, Managers will be given the option to add or remove items from t
 
 ## Login Credentials to Use Application
 
-To access site as Manager, select 'Manager' and enter the password 'm'.
-To access site as an employee, select any other username besides 'Manager' and put in their first initial in lowercase.
-For example, if username is 'James', the corresponding password will be 'j'.
+To access site as Manager, select 'Manager' and enter the password 'm'. <br />
+To access site as an employee, select any other username besides 'Manager' and put in their first initial in lowercase. <br />
+For example, if username is 'James', the corresponding password will be 'j'. <br />
 
 
 
