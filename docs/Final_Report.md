@@ -30,6 +30,10 @@ The solution for this problem that we can up with was to create a point-of-sales
 
 (8) How the final system solves the problem 
 
+The final system would solve the problem by giving the managers a "manager access page" where they can control information about their employees and products/services, look at previous sales they made, and changing the manager and employee payout percentages.
+
 (9) Challenges faced and their impact on the final design
+
+It's still a challenge to get the checkout page to work. We can't figure how to implement the part that employees would use to checkout a customer. An example is selecting a service a customer wants and getting that to show up on the order screen. As a result, we don't have functionaltiies for the employees to use the system.
 
 (10) Future work
