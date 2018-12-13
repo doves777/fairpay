@@ -18,5 +18,11 @@ Managers are required to login into the application in order to verify your iden
 
 After loging in, Managers will be given the option to add or remove items from the store catalog, view store sales, view employee payouts, add and remove employees, edit employee's payout, as well as reset users password.  In addition to these options, managers are able to check out as a specific employee.  
 
+## Login Credentials to Use Application
+
+To access site as Manager, select 'Manager' and enter the password 'm'.
+To access site as an employee, select any other username besides 'Manager' and put in their first initial in lowercase.
+For example, if username is 'James', the corresponding password will be 'j'.
+
 
 
