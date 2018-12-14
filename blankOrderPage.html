@@ -9,14 +9,11 @@
 	<title>FairPay</title>
 
 	<style>
-
 		body{
 		  color: #FFFFFF !important;
 		  font-family:Arial;
 		  background-color: #3B3F45;
-
 		}
-
 		.checkoutbody{ /* Container div */
 			height:400px;
 			width:200px;
@@ -58,7 +55,6 @@
 			margin-top: -180px;
 			margin-left: -218px;
 		}
-
 #items{
   	list-style-type: none;
   	margin: 0;
@@ -67,14 +63,8 @@
 .itemCat {
   font: 200 20px/1.5 Helvetica, Verdana, sans-serif;
   border-bottom: 1px solid #ccc;
-}
-.itemCat:last-child{
-	border: none;
-}
-li a {
   text-decoration: none;
   color: #FFFFFF;
-
   -webkit-transition: font-size 0.3s ease, background-color 0.3s ease, color 0.3s ease;
   -moz-transition: font-size 0.3s ease, background-color 0.3s ease, color 0.3s ease;
   -o-transition: font-size 0.3s ease, background-color 0.3s ease, color 0.3s ease;
@@ -83,8 +73,11 @@ li a {
   display: block;
   width: 200px;
 }
+.itemCat:last-child{
+	border: none;
+}
 
-li a:hover {
+.itemCat:hover {
   font-size: 30px;
   background: #808080;
 	color:  #FFFFFF;
@@ -115,16 +108,16 @@ li a:hover {
 		</div>
 		<div id="listserve">
 			<ul id="myList">
-				<ld><h2>Items</h2></li>
+				<li><h2>Items</h2></li>
 			</ul>
 		</div>
 	</div>
 
 	<div class="options">
 		<ul id="items">
-    	<li class="itemCat" id="waxing"><a href="#">Waxing</a></li>
-    	<li class="itemCat" id="nail"><a href="#">Nail Services</a></li>
-			<li class="itemCat" id="checkout"><a href="#">Checkout</a></li>
+    	<li class="itemCat" id="waxing">Waxing</li>
+    	<li class="itemCat" id="nail">Nail Services</li>
+			<li class="itemCat" id="checkout">Checkout</li>
   	</ul>
 		<br>
 		<input type="text" placeholder="Search..." name="search">
@@ -155,10 +148,9 @@ li a:hover {
 		}
 		function addTotal(){
 			var count = document.getElementById("myList").getElementsByTagName("li").length;
-			var total = (count*20)+Math.floor(Math.random()*5);
+			var total = ((count-1)*20)+Math.floor(Math.random()*5);
 			document.getElementById("totalAm").innerHTML = total;
 		}
-
 			$("#dialog1").dialog({
 				autoOpen: false
 			});
@@ -179,7 +171,6 @@ li a:hover {
 			});
 			$(".item").on("click", function() {
 				$("#output").text($(".item").val());
-
 			});
 	</script>
 </body>
