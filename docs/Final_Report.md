@@ -28,6 +28,8 @@ The solution for this problem that we can up with was to create a point-of-sales
 
 (7) Rationales and Justifications on system design and technology 
 
+We went with technologies we knew to the best extent for our system. We wanted to choose the technolgies that we knew how to use best to build the system we wanted to build. We used AWS EC2 to host the server and then used AWS RDS to host the MySQL database. For editing and the handle of our files we used workbench, WinSCP, and Ubuntu. We used workbench to connect to our RDS and handle the Fairplay database we are using. We used WinSCP to transfer our files from github and any local files to the server. Lastly, we decided to use a Ubuntu terminal to move files from the root directory to /var/www/html folder where it could be live on the server.    
+
 (8) How the final system solves the problem 
 
 The final system would solve the problem by giving the managers a "manager access page" where they can control information about their employees and products/services, look at previous sales they made, and changing the manager and employee payout percentages.
